@@ -13,7 +13,34 @@
 </head>
 
 <body>
-  <h1>Gradient Generator</h1>
+  <div class="main-wrapper">
+    <h1>Gradient Generator</h1>
+    <p>Generate whatever JPG or PNG gradient you want</p>
+    <form method="post" action="generate_gradient.php">
+      <div class="inputs-row">
+        <label>Color from</label>
+        <input type="color" name="color_from">
+      </div>
+      <div class="inputs-row">
+        <label>Color to</label>
+        <input type="color" name="color_to">
+      </div>
+      <div class="inputs-row">
+        <label>Type</label>
+        <select name="gradient_type">
+          <option value="horizontal">&#129094;</option>
+          <option value="vertical">&#129147;</option>
+          <option value="diagonal">&#129158;</option>
+          <option value="rectangle"></option>
+          <option value="ellipse"></option>
+        </select>
+      </div>
+      <div class="inputs-row">
+        <button type="button">Generate preview</button>
+        <button type="submit">Download</button>
+      </div>
+    </form>
+  </div>
   <script src="js/scripts.js"></script>
 </body>
 </html>

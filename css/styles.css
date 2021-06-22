@@ -1,0 +1,11 @@
+body {
+	font-family:  Arial, sans-serif;
+	background-color: #999999;
+}
+
+.main-wrapper {
+	max-width:  1000px;
+	margin:  0 auto 0 auto;
+	padding: 1rem 0.5rem;
+	background-color: #dddddd;
+}
